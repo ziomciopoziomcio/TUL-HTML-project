@@ -30,3 +30,6 @@ body {
     background-color: #f8f9fa;
 }
 
+.navbar-nav {
+    flex-direction: row;
+}
