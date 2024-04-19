@@ -32,4 +32,9 @@ body {
 
 .navbar-nav {
     flex-direction: row;
+    justify-content: center;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
 }
