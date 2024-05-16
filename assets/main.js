@@ -1,15 +1,4 @@
-document.getElementById('navbar-button').addEventListener('click', function() {
-    var navbarContainer = document.getElementById('navbar-container');
-    if (navbarContainer.style.display === 'none') {
-        navbarContainer.style.display = 'block';
-    } else {
-        navbarContainer.style.display = 'none';
-    }
-});
-
-//TODO: Fix
-
-document.querySelector('form').addEventListener('submit', function(event) {
+document.querySelector('form').addEventListener('submit', function (event) {
     event.preventDefault();
 
     var email = document.getElementById('email').value;
@@ -35,4 +24,13 @@ document.querySelector('form').addEventListener('submit', function(event) {
         }
     }
     alert('Dane zostały poprawnie przesłane.');
+});
+
+document.getElementById('navbar-button').addEventListener('click', function () {
+    var navbarContainer = document.getElementById('navbar-container');
+    if (navbarContainer.style.display === 'none') {
+        navbarContainer.style.display = 'block';
+    } else {
+        navbarContainer.style.display = 'none';
+    }
 });
