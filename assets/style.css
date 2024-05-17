@@ -1,9 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    background-image: url('../img/background.jpg');
+    background-color: #b8afa5;
+    /*background-image: url('../img/background.jpg');*/
     background-repeat: no-repeat;
     /*background-attachment: fixed;*/
     background-size: cover;
@@ -13,7 +13,7 @@ body {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #d4cbc3;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
 }
 
@@ -27,13 +27,45 @@ body {
     line-height: 1.6;
 }
 #mainNav {
-    background-color: #f8f9fa;
+    background-color: #000000;
+
+}
+#navbar {
+    background-color: #000000;
+}
+.navbar-light {
+    color: #ffffff;
+    background-color: #000000;
+
 }
 
+.navbar {
+    background-color: #333030 !important;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .dropdown-item {
+    color: #b8afa5 !important;
+}
+
+.navbar-toggler {
+    background-color: #b8afa5 !important;
+}
+
+.dropdown-menu {
+    background-color:  #444040 !important;
+    border: 2px solid #b8afa5;
+}
 .navbar-nav {
     flex-direction: row;
     justify-content: center;
+    color: #000000;
+    /*background-color: #f8f9fa;*/
+    /*background-image: url('../img/menu_background.jpg');*/
 }
+
+
 
 .navbar-nav .nav-item {
     margin: 0 10px;
