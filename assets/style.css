@@ -53,8 +53,9 @@ body {
     background-color: #b8afa5 !important;
 }
 
-.dropdown-menu{
-    background-color: #ffffff !important;
+.dropdown-menu {
+    background-color:  #444040 !important;
+    border: 2px solid #b8afa5;
 }
 .navbar-nav {
     flex-direction: row;
