@@ -43,12 +43,16 @@ body {
     background-color: #163172 !important;
 }
 
-.navbar .navbar-brand,
+
 .navbar .nav-link,
 .navbar .dropdown-item {
     color: #f6f6f6 !important;
 }
-
+.navbar-brand{
+    color: #f6f6f6 !important;
+    display: flex;
+    text-align: left;
+}
 .navbar-toggler {
     background-color: #f6f6f6 !important;
 }
@@ -89,7 +93,7 @@ body {
 
 .profile{
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    background-color: #d6e4f0;
+    background-color: #f6f6f6;
     display: flex;
     justify-content: left;
     margin: 1%;
@@ -119,11 +123,17 @@ body {
   }
 .attraction{
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    background-color: #d6e4f0;
+    background-color: #f6f6f6;
     display: flex;
     justify-content: center;
     margin: 1%;
     padding: 1%;
     flex-direction: column;
     
+}
+.logo{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: left;
 }
