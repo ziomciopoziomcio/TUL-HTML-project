@@ -58,8 +58,8 @@ body {
 }
 
 .dropdown-menu {
-    background-color:  #444040 !important;
-    border: 2px solid #b8afa5;
+    background-color:  #23005a !important;
+    border: 2px solid #f6f6f6;
 }
 .navbar-nav {
     flex-direction: row;
