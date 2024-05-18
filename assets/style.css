@@ -93,12 +93,21 @@ body {
     display: flex;
     justify-content: left;
     margin: 1%;
+    padding: 1%;
 
 }
 
 .profile_photo{
     margin: 1%;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+}
+
+.profile_info{
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
