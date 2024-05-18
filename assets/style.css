@@ -70,3 +70,10 @@ body {
 .navbar-nav .nav-item {
     margin: 0 10px;
 }
+
+.flex_containter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
