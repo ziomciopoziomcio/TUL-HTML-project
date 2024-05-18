@@ -77,3 +77,20 @@ body {
     align-items: center;
     
 }
+.container_organisers {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #d4cbc3;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    align-items: center;
+
+}
+
+.profile{
+    border: #000000;
+    display: flex;
+    justify-content: left;
+
+
+}
