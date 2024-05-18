@@ -117,3 +117,7 @@ body {
     font-weight: 400;
     font-style: normal;
   }
+
+#id_contact_organizators_container {
+    margin-top: 2%;
+}
