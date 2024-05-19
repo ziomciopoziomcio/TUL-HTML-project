@@ -23,7 +23,7 @@ body {
 }
 
 .container p {
-    color: #666;
+    color: #3b3b3b;
     line-height: 1.6;
 }
 #mainNav {
@@ -43,19 +43,23 @@ body {
     background-color: #163172 !important;
 }
 
-.navbar .navbar-brand,
+
 .navbar .nav-link,
 .navbar .dropdown-item {
     color: #f6f6f6 !important;
 }
-
+.navbar-brand{
+    color: #f6f6f6 !important;
+    display: flex;
+    text-align: left;
+}
 .navbar-toggler {
     background-color: #f6f6f6 !important;
 }
 
 .dropdown-menu {
-    background-color:  #444040 !important;
-    border: 2px solid #b8afa5;
+    background-color:  #23005a !important;
+    border: 2px solid #f6f6f6;
 }
 .navbar-nav {
     flex-direction: row;
@@ -89,16 +93,63 @@ body {
 
 .profile{
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    background-color: #d6e4f0;
+    background-color: #f6f6f6;
     display: flex;
     justify-content: left;
     margin: 1%;
+    padding: 1%;
 
 }
 
 .profile_photo{
     margin: 1%;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+}
+
+.profile_info{
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.freeman-regular {
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+#id_contact_organizators_container {
+    margin-top: 2%;
+}
+.attraction{
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+    padding: 1%;
+    flex-direction: column;
+    
+}
+.logo{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: left;
+}
+
+.social_media{
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+    padding: 1%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    text-wrap: wrap;
 }
