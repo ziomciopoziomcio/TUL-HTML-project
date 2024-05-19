@@ -60,22 +60,70 @@
 </nav>
 <div class="container">
     <h1>Kontakt</h1>
-    <p>Skontaktuj się z nami!</p>
-    <form>
-        <div class="form-group">
-            <label for="name">Imię</label>
-            <input type="text" class="form-control" id="name" placeholder="Wpisz swoje imię">
+    
+    <div class="container">
+        <p>Skontaktuj się z nami!</p>
+        <form>
+            <div class="form-group">
+                <label for="name">Imię</label>
+                <input type="text" class="form-control" id="name" placeholder="Wpisz swoje imię">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Wpisz swój email">
+            </div>
+            <div class="form-group">
+                <label for="message">Wiadomość</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Wpisz swoją wiadomość"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Wyślij</button>
+        </form>
+    </div>
+
+    <div class="container_organizers" id="id_contact_organizators_container">
+        <p>Lub bezpośrednio z organizatorami!</p>
+
+        <div class="flex_container">
+            <div class="profile">
+
+                <img class="profile_photo" src="../img/jsobotni.jpg" alt="PFP organizatora 1">
+                <div class="profile_info">
+                    <h3>Jędrzej Niedzielski </h3>
+                    <p>tel. 123 456 789</p>
+                    <p>email: -||-</p>
+                </div>
+            </div>
+            <div class="profile">
+    
+                <img class="profile_photo" src="../img/nzugaj.jpg" alt="PFP organizatora 2">
+                <div class="profile_info">
+                    <h3>Nina Zugaj </h3>
+                    <p>tel. 123 456 789</p>
+                    <p>email: -||-</p>
+                </div>
+            </div>
+            <div class="profile">
+    
+                <img class="profile_photo" src="../img/sszczesny.jpg" alt="PFP organizatora 3">
+                <div class="profile_info">
+                    <h3>Stanisław Szczęsny </h3>
+                    <p>tel. 123 456 789</p>
+                    <p>email: -||-</p>
+                </div>
+            </div>
+            <div class="profile">
+    
+                <img class="profile_photo" src="../img/jandrut.jpg" alt="PFP organizatora 4">
+                <div class="profile_info">
+                    <h3>Jerzy Andrusiewicz </h3>
+                    <p>tel. 123 456 789</p>
+                    <p>email: -||-</p>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Wpisz swój email">
-        </div>
-        <div class="form-group">
-            <label for="message">Wiadomość</label>
-            <textarea class="form-control" id="message" rows="3" placeholder="Wpisz swoją wiadomość"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Wyślij</button>
-    </form>
+
+    </div>
+    
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
