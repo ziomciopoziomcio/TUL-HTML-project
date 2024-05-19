@@ -26,6 +26,20 @@ document.querySelector('form').addEventListener('submit', function (event) {
     alert('Dane zostały poprawnie przesłane.');
 });
 
+// contact.js
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var email = document.getElementById('contact-email').value;
+    var emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+    if (!emailPattern.test(email)) {
+        alert('Proszę wprowadzić poprawny adres e-mail.');
+        return;
+    }
+    alert('Dane zostały poprawnie przesłane.');
+});
+
 document.getElementById('navbar-button').addEventListener('click', function () {
     var navbarContainer = document.getElementById('navbar-container');
     if (navbarContainer.style.display === 'none') {
