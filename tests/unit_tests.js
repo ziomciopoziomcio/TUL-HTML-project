@@ -58,6 +58,37 @@ describe('Form submission', () => {
         phoneInput.value = 'invalid';
         expect(() => form.dispatchEvent(new Event('submit'))).toThrow('Proszę wprowadzić poprawny numer telefonu.');
     });
+    it('invalidates incorrect email', () => {
+        const emailInput = document.createElement('input');
+        emailInput.id = 'email';
+        document.body.appendChild(emailInput);
+        emailInput.value = 'invalid_email';
+        expect(validateEmail(emailInput.value)).toBe(false);
+    });
+
+    it('invalidates empty email', () => {
+        const emailInput = document.createElement('input');
+        emailInput.id = 'email';
+        document.body.appendChild(emailInput);
+        emailInput.value = '';
+        expect(validateEmail(emailInput.value)).toBe(false);
+    });
+
+    it('invalidates email without domain', () => {
+        const emailInput = document.createElement('input');
+        emailInput.id = 'email';
+        document.body.appendChild(emailInput);
+        emailInput.value = 'test@';
+        expect(validateEmail(emailInput.value)).toBe(false);
+    });
+
+    it('invalidates email without @ symbol', () => {
+        const emailInput = document.createElement('input');
+        emailInput.id = 'email';
+        document.body.appendChild(emailInput);
+        emailInput.value = 'test.example.com';
+        expect(validateEmail(emailInput.value)).toBe(false);
+    });
 });
 
 describe('Navbar button click', () => {
