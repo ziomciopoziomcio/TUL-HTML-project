@@ -37,7 +37,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         alert('Proszę wprowadzić poprawny adres e-mail.');
         return;
     }
-    alert('Dane zostały poprawnie przesłane.');
+    alert('Wiadomość została przesłana.');
 });
 
 document.getElementById('navbar-button').addEventListener('click', function () {
