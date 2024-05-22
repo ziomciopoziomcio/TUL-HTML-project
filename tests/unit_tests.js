@@ -22,7 +22,9 @@ describe('Form submission', () => {
         form.appendChild(phoneInput);
         document.body.appendChild(form);
 
-        const event = { preventDefault: jest.fn() };
+        // Mock alert
+        global.alert = jest.fn();
+
         form.addEventListener('submit', function (event) {
             event.preventDefault();
 
