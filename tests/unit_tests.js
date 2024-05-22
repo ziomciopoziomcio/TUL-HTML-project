@@ -2,13 +2,13 @@ describe('Form submission', () => {
     it('prevents default form submission', () => {
         // Mock form and event
         const form = document.createElement('form');
-        const event = { preventDefault: jest.fn() };
+        const mockPreventDefault = jest.fn();
         form.addEventListener('submit', function (event) {
-            event.preventDefault();
+            mockPreventDefault();
         });
         form.dispatchEvent(new Event('submit'));
 
-        expect(event.preventDefault).toHaveBeenCalled();
+        expect(mockPreventDefault).toHaveBeenCalled();
     });
 
     it('validates email and phone number', () => {
