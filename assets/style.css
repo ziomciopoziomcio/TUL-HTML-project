@@ -181,7 +181,18 @@ body {
     .navbar-brand {
         font-size: 1em;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        order: 1;
+    }
+
+    .navbar-toggler {
+        order: 3;
     }
 
     .navbar-collapse {
@@ -253,6 +264,17 @@ body {
         font-size: 2em;
         cursor: pointer;
         color: #ffffff;
+    }
+    .navbar-brand::before {
+        content: "";
+        flex: 0.2;
+        order: 0;
+    }
+
+    .navbar-brand::after {
+        content: "";
+        flex: 1.8;
+        order: 2;
     }
 }
 
