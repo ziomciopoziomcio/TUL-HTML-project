@@ -220,4 +220,9 @@ body {
         top: auto;
         right: auto;
     }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
