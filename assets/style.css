@@ -66,6 +66,12 @@ body {
     background-color:  #23005a !important;
     border: 2px solid #f6f6f6;
 }
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f6f6f6 !important;
+    color: #23005a !important;
+}
+
 .navbar-nav {
     flex-direction: row;
     justify-content: center;
@@ -73,8 +79,6 @@ body {
     /*background-color: #f8f9fa;*/
     /*background-image: url('../img/menu_background.jpg');*/
 }
-
-
 
 .navbar-nav .nav-item {
     margin: 0 10px;
@@ -144,7 +148,7 @@ body {
     display: flex;
     width: 50px;
     height: 50px;
-    align-items: left;
+    /*!*align-items: left;*! ej bo to nie dziala*/
 }
 
 .social_media{
