@@ -165,59 +165,59 @@ body {
 
 @media (max-width: 768px) {
     .navbar-brand {
-        font-size: 1em;
+        font-size: 1em !important;
     }
     .navbar-collapse {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-        overflow: auto;
-        transition: all 0.3s ease-in-out;
-        transform: translateX(-100%);
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        background-color: rgba(0, 0, 0, 0.9) !important;
+        overflow: auto !important;
+        transition: all 0.3s ease-in-out !important;
+        transform: translateX(-100%) !important;
     }
 
     .navbar-collapse.show {
-        transform: translateX(0);
+        transform: translateX(0) !important;
     }
 
     .navbar-nav {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        height: 100% !important;
     }
 
     .nav-item {
-        margin: 20px 0;
+        margin: 20px 0 !important;
     }
 
     .nav-link {
-        font-size: 1.2em;
-        padding: 15px 20px; /* Zwiększamy padding */
-        cursor: pointer; /* Dodajemy styl kursora */
+        font-size: 1.2em !important;
+        padding: 15px 20px !important; /* Zwiększamy padding */
+        cursor: pointer !important; /* Dodajemy styl kursora */
     }
 
     .container {
-        width: 100%;
-        padding: 10px;
+        width: 100% !important;
+        padding: 10px !important;
     }
 
     .profile, .attraction, .social_media {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column !important;
+        align-items: center !important;
     }
 
     .profile_photo, .logo {
-        margin: 0 auto;
+        margin: 0 auto !important;
     }
 
     .dropdown-menu {
-        position: relative;
-        transform: none;
-        top: auto;
-        right: auto;
+        position: relative !important;
+        transform: none !important;
+        top: auto !important;
+        right: auto !important;
     }
 }
