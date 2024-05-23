@@ -173,7 +173,13 @@ body {
     }
 
     .nav-item {
-        margin: 10px 0;
+        margin: 15px 0;
+    }
+
+    .nav-link {
+        font-size: 1.2em;
+        padding: 15px 20px; /* Zwiększamy padding */
+        cursor: pointer; /* Dodajemy styl kursora */
     }
 
     .container {
