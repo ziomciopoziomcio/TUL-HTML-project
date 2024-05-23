@@ -165,7 +165,7 @@ body {
 
 @media (max-width: 600px) {
     .navbar-brand {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .navbar-nav {
@@ -177,7 +177,8 @@ body {
     }
 
     .container {
-        width: 90%;
+        width: 100%;
+        padding: 10px;
     }
 
     .profile, .attraction, .social_media {
@@ -187,5 +188,12 @@ body {
 
     .profile_photo, .logo {
         margin: 0 auto;
+    }
+
+    .dropdown-menu {
+        position: relative;
+        transform: none;
+        top: auto;
+        right: auto;
     }
 }
