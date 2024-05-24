@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
@@ -7,6 +11,8 @@ body {
     background-repeat: no-repeat;
     /*background-attachment: fixed;*/
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -169,6 +175,21 @@ body {
     align-items: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     text-wrap: wrap;
+}
+
+footer {
+    background-color: #163172;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+.pfooter {
+    color: #f6f6f6;
 }
 
 @media (min-width: 769px) {
