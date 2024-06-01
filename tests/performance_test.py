@@ -73,6 +73,10 @@ if __name__ == "__main__":
     print("NIE UŻYWAĆ W PRODUKCJI")
     print("#" * 50)
 
+    print("Test kontrolny, limit: 500 Mb/s")
+    control = test_page_load_time("https://ziomciopoziomcio.github.io/TUL-HTML-project/", 500000000)
+    print("Czas ładowania: ", control)
+
     # Lista stron do testowania
     urls = ["https://ziomciopoziomcio.github.io/TUL-HTML-project/",
             "https://ziomciopoziomcio.github.io/TUL-HTML-project/pages/londyn.html",
