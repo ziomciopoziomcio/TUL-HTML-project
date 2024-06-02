@@ -11,6 +11,7 @@ import subprocess
 import time
 import csv
 import requests
+import shutil
 
 
 # Ustawianie prędkości sieci
@@ -48,10 +49,11 @@ def test_page_load_time(url, download_speed_limit):
         start_time = time.time()
 
         # Pobranie strony
-        response = requests.get(url)
+        subprocess.check_call(['wget', '--recursive', '--no-clobber', '--page-requisites', '--html-extension', '--convert-links', '--restrict-file-names=windows', '--domains', url, '--no-parent', '--no-cache', url, '-P', '/temp'])
 
         # Koniec pomiaru czasu
         end_time = time.time()
+        shutil.rmtree('/temp')
     except Exception as e:
         print(f"Error: {e}")
         return -1
@@ -73,16 +75,16 @@ if __name__ == "__main__":
     print("NIE UŻYWAĆ W PRODUKCJI")
     print("#" * 50)
 
-    print("Test kontrolny, limit: 500 Mb/s")
-    control = test_page_load_time("https://ziomciopoziomcio.github.io/TUL-HTML-project/", 500000000)
-    print("Czas ładowania: ", control)
-
     # Lista stron do testowania
     urls = ["https://ziomciopoziomcio.github.io/TUL-HTML-project/",
             "https://ziomciopoziomcio.github.io/TUL-HTML-project/pages/londyn.html",
             "https://ziomciopoziomcio.github.io/TUL-HTML-project/pages/zapisy.html"]
 
     for url in urls:
+        # Test kontrolny
+        print(f"Test kontrolny, limit: 500 Mb/s, strona: {url}")
+        control = test_page_load_time(url, 500000000)
+        print("Czas ładowania: ", control)
         # Ustawienie parametrów testowych
         download_speed = 100
         # Tworzymy plik CSV dla każdej strony

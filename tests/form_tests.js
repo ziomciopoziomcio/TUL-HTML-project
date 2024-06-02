@@ -11,8 +11,10 @@ describe('Form validation', () => {
     beforeEach(() => {
         document.body.innerHTML = `
             <form>
+                <input id="name" type="text" />
                 <input id="email" type="text" />
                 <input id="phone" type="text" />
+                <input id="contact-name" type="text" />
                 <input id="contact-email" type="text" />
             </form>
         `;
@@ -70,6 +72,46 @@ describe('Form validation', () => {
         const email = document.getElementById('contact-email');
 
         email.value = 'test@example.com';
+        form.dispatchEvent(new Event('submit'));
+
+        expect(form.checkValidity()).toBe(true);
+    });
+
+    it('should prevent form submission when name contains numbers', () => {
+        const form = document.querySelector('form');
+        const name = document.getElementById('name');
+
+        name.value = 'John123';
+        form.dispatchEvent(new Event('submit'));
+
+        expect(form.checkValidity()).toBe(true);
+    });
+
+    it('should allow form submission when name is valid', () => {
+        const form = document.querySelector('form');
+        const name = document.getElementById('name');
+
+        name.value = 'John';
+        form.dispatchEvent(new Event('submit'));
+
+        expect(form.checkValidity()).toBe(true);
+    });
+
+    it('should prevent contact form submission when name contains numbers', () => {
+        const form = document.querySelector('form');
+        const name = document.getElementById('contact-name');
+
+        name.value = 'John123';
+        form.dispatchEvent(new Event('submit'));
+
+        expect(form.checkValidity()).toBe(true);
+    });
+
+    it('should allow contact form submission when name is valid', () => {
+        const form = document.querySelector('form');
+        const name = document.getElementById('contact-name');
+
+        name.value = 'John';
         form.dispatchEvent(new Event('submit'));
 
         expect(form.checkValidity()).toBe(true);
